@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'veriSeti' is your DataFrame
+takımlar = veriSeti['position']  # This line defines 'takımlar'
+asist = veriSeti['assists']
+
+plt.figure(figsize=(20, 7))
+plt.bar(takımlar, asist)  # Change 'mevki' to 'takımlar' here
+plt.xlabel('Mevki')
+plt.ylabel('Asist Sayısı')
+plt.title('Mevkilere Göre Asist Sayısı')
+plt.xticks(rotation=90)
+plt.show()
