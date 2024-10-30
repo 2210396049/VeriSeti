@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+veriSeti = pd.read_csv('attacking.csv')
+klup = veriSeti['club']
+asist = veriSeti['assists']
+
+plt.figure(figsize=(20, 7))  # Grafiğin boyutunu ayarlayın
+plt.bar(klup, asist)
+plt.xlabel('klup')
+plt.ylabel('asist')
+plt.title('Takımlara göre asist sayısı')
+plt.xticks(rotation=90)  # Ülke isimlerinin dikey yazılması
+plt.show()
