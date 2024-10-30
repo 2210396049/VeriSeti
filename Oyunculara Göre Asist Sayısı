@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming 'veriSeti' is your DataFrame
+takımlar = veriSeti['player_name']  # This line defines 'takımlar'
+asist = veriSeti['assists']
+
+plt.figure(figsize=(50, 100))
+plt.bar(takımlar, asist)  # Change 'mevki' to 'takımlar' here
+plt.xlabel('Oyuncu adı')
+plt.ylabel('Asist Sayısı')
+plt.title('Oyunculara Göre Asist Sayısı')
+plt.xticks(rotation=15000)
+plt.show()
